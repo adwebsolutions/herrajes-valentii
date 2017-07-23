@@ -1,0 +1,250 @@
+/*
+Theme Name: Porto Child
+Theme URI: http://newsmartwave.net/wordpress/porto
+Author: SW-THEMES
+Author URI: http://newsmartwave.net/
+Description: Porto Responsive Wordpress + eCommerce Theme.
+Version: 1.1
+Template: porto
+License: Commercial
+License URI: http://themeforest.net/licenses/regular_extended
+Tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, light, dark, red, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: porto-child
+
+*/
+
+@import url("../porto/style.css");
+
+/*************** ADD YOUR CUSTOM CSS HERE  ***************/
+/**
+ * Header
+ **/
+#header.logo-overlay-header .overlay-logo {
+    top: 0px;
+}
+#header.header-loaded .header-main {
+    padding: 5px 0;
+}
+.fixed-header #header .header-main,
+.fixed-header #header .header-main.sticky{
+    background-color: #d5d5d5;
+}
+
+/**
+ * Menu
+ **/
+#main-menu .mega-menu > li.menu-item > a,
+#main-menu .mega-menu > li.menu-item > h5 {
+    color: #4b4b4b;
+    font-size: 14px;
+}
+#main-menu .mega-menu > li.menu-item.active > a,
+#main-menu .mega-menu > li.menu-item.active > h5 {
+    background: transparent none repeat scroll 0 0;
+    color: #005b83;
+}
+#main-menu .mega-menu > li.menu-item.active:hover > a,
+#main-menu .mega-menu > li.menu-item:hover > a,
+#main-menu .mega-menu > li.menu-item.active:hover > h5,
+#main-menu .mega-menu > li.menu-item:hover > h5 {
+    background: transparent none repeat scroll 0 0;
+    color: #005b83;
+}
+
+/**
+ * Page home
+ **/
+html section.section-tertiary,
+html .vc_row.section-tertiary,
+html .vc_column_container.section-tertiary {
+    background-color: #137898 !important;
+    border-color: #137898 !important;
+    color: #fff;
+}
+html section.section-tertiary h1,
+html .vc_row.section-tertiary h1,
+html .vc_column_container.section-tertiary h1,
+html section.section-tertiary h2,
+html .vc_row.section-tertiary h2,
+html .vc_column_container.section-tertiary h2,
+html section.section-tertiary h3,
+html .vc_row.section-tertiary h3,
+html .vc_column_container.section-tertiary h3,
+html section.section-tertiary h4,
+html .vc_row.section-tertiary h4,
+html .vc_column_container.section-tertiary h4,
+html section.section-tertiary h5,
+html .vc_row.section-tertiary h5,
+html .vc_column_container.section-tertiary h5,
+html section.section-tertiary h6,
+html .vc_row.section-tertiary h6,
+html .vc_column_container.section-tertiary h6 {
+    color: #fff;
+}
+.section-custom-construction .container::before,
+.section-custom-construction .container::after {
+    display: none;
+}
+.home-concept-construction.section .upb_row_bg.vcpb-default{
+    background-image: url("images/home-concept-small.png") !important;
+}
+
+.vc_row.custom-block{
+    border: 1px solid #005b83;
+    margin: 30px auto !important;
+}
+.vc_row.custom-block .wpb_single_image.wpb_content_element vc_align_left{
+    margin-bottom: 0;
+}
+.vc_row.custom-block .custom-column-text{
+    margin: 90px 0;
+}
+.vc_row.custom-block .custom-column-text .wpb_content_element{
+    margin-bottom: 0;
+}
+.vc_row.custom-block .custom-column-text .wpb_content_element p{
+    font-size: 26px;
+    line-height: 28px;
+}
+.vc_row.custom-block .custom-column-text .wpb_content_element p a.vc_btn3.btn{
+    margin: 0 20px;
+}
+
+/**
+ * Page contact
+ **/
+.wpcf7-form h2.m-b-none{
+    margin-bottom: 20px !important;
+}
+
+/**
+ * Footer
+ **/
+#footer {
+    background-image: url("images/background-footer.jpg");
+    background-repeat: repeat;
+    padding-bottom: 0;
+    min-height: initial;
+    padding-top: 0;
+}
+#footer::after{
+    display: none;
+}
+.footer-bottom .container {
+    border-top: medium none;
+}
+#footer .footer-bottom {
+    background-color: #005b83;
+    color: #fff;
+}
+#footer .footer-bottom a, #footer .footer-bottom a:hover {
+    color: #fff;
+}
+.footer-main-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+#footer .footer-main-wrapper::before,
+#footer .footer-main-wrapper::after{
+    background-repeat: repeat-y;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 140px;
+}
+#footer .footer-main-wrapper::before{
+    background-image: url("images/shadow-left.png");
+    left: 0;
+}
+#footer .footer-main-wrapper::after{
+    background-image: url("images/shadow-right.png");
+    right: 0;
+}
+#footer .footer-main > .container{
+    border-bottom: 1px solid #3e3e3e;
+    margin-bottom: 35px;
+}
+
+#footer .widgettitle, #footer .widget-title {
+    color: #fff;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    margin-bottom: 15px !important;
+    text-transform: uppercase;
+}
+#footer .logo {
+    margin-top: 40px;
+}
+#footer ul.menu{
+    border: medium none;
+}
+#footer ul.menu li:before{
+    border: medium none;
+}
+#footer ul.menu li{
+    border: medium none;
+}
+#footer ul.menu li a{
+    color: #fff;
+    font-size: 16px;
+}
+.widget_recent_entries > ul li,
+.widget_recent_comments > ul li,
+.widget_pages > ul li,
+.widget_meta > ul li,
+.widget_nav_menu > div > ul li,
+.widget_archive > ul li,
+.widget_categories > ul li,
+.widget_rss > ul li {
+    padding: 3px 0 3px 15px;
+}
+ul.contact-details li i{
+    color: #fff !important;
+    font-size: 18px;
+    position: absolute !important;
+    text-align: center;
+    top: 5px;
+    width: 30px;
+}
+ul.contact-details li span{
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 20px;
+    padding-left: 35px;
+}
+ul.contact-details li span a{
+    color: #fff !important;
+    font-size: 15px;
+}
+
+/**
+ * Responsive styles
+ **/
+@media (min-width:992px) and (max-width:1169px){
+    .vc_row.custom-block .custom-column-text .wpb_content_element p a.vc_btn3.btn {
+        margin: 20px !important;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .vc_row.custom-block .custom-column-text .wpb_content_element p a.vc_btn3.btn {
+        margin: 20px !important;
+    }
+    .vc_row.custom-block .custom-column-text {
+        margin: 50px 0;
+    }
+}
+@media screen and (max-width:767px){
+    .vc_row.custom-block .custom-column-text .wpb_content_element p a.vc_btn3.btn {
+        margin: 20px !important;
+    }
+    .vc_row.custom-block .custom-column-text {
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width:480px){
+    .vc_row.custom-block .custom-column-text {
+        margin: 10px 0;
+    }
+}
